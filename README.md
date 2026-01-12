@@ -1,18 +1,66 @@
-# Rock-paper-scissors Automatic Game
-Автоматическая игра в "Камень, ножницы, бумага", созданная с использованием Pygame. В этой версии классической игры объекты "камень", "бумага" и "ножницы" двигаются по экрану и сталкиваются друг с другом по известным правилам, стремясь победить остальных.
+# Rock Paper Scissors Life Simulation
 
-# Функции
-1. Механика столкновений: Камни, бумага и ножницы движутся по экрану и изменяются при столкновении:
-2. Камень побеждает ножницы, превращая их в камень.
-3. Ножницы побеждают бумагу, превращая её в ножницы.
-4. Бумага побеждает камень, превращая его в бумагу.
-5. Интерактивный курсор: Лазер следует за курсором игрока, добавляя визуальный эффект.
+A simple life-like simulation based on **Rock–Paper–Scissors** rules, built with **Python** and **Pygame**.
 
-# Использование
-Возможность задать своё количество объектов изменив значение переменной CountOfEnemies.
+Entities of three types — **Rock**, **Paper**, and **Scissors** — move freely in a 2D space.
+When two entities collide, the loser transforms into the winner, following classic rules:
 
-# Требования
-1. Python 3.x
-2. Библиотека Pygame (pip install pygame)
+* Rock loses to Paper → Rock becomes Paper
+* Paper loses to Scissors → Paper becomes Scissors
+* Scissors loses to Rock → Scissors becomes Rock
 
-This project is created by [abik](https://github.com/abi4ka).
+Over time, populations evolve dynamically until one type dominates the simulation.
+
+---
+
+## Features
+
+* Real-time autonomous movement
+* Rock–Paper–Scissors interaction logic
+* Visual representation using textures
+* Simple emergent behavior simulation
+* Minimalistic and lightweight implementation
+
+---
+
+## Requirements
+
+* Python **3.8+**
+* **pygame**
+
+Install dependencies:
+
+```bash
+pip install pygame
+```
+
+---
+
+## Running the Project
+
+1. Clone the repository
+2. Make sure the following image files are present in the project root:
+
+   * `paper.png`
+   * `stone.png`
+   * `scissors.png`
+3. Run the simulation:
+
+```bash
+python main.py
+```
+
+---
+
+## How It Works
+
+* Each entity moves randomly within window bounds
+* Collision detection uses rectangular hitboxes
+* On collision, the losing entity changes its type and joins the winner’s group
+* The simulation continuously updates and renders the state
+
+---
+
+## Author
+
+Created by [abik](https://github.com/abi4ka)
