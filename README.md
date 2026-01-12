@@ -11,6 +11,9 @@ When two entities collide, the loser transforms into the winner, following class
 
 Over time, populations evolve dynamically until one type dominates the simulation.
 
+<img width="622" height="618" alt="image" src="https://github.com/user-attachments/assets/da3085d8-171f-4b49-af2e-9c8993370213" />
+
+
 ---
 
 ## Features
